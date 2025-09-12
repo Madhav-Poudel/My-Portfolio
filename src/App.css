@@ -1,0 +1,207 @@
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: initial;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes scan {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(400%);
+    opacity: 0;
+  }
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes borderMove {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(200%);
+    opacity: 0;
+  }
+}
+
+@keyframes borderMoveReverse {
+  0% {
+    transform: translateX(200%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+@keyframes borderMoveVertical {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(200%);
+    opacity: 0;
+  }
+}
+
+@keyframes borderMoveVerticalReverse {
+  0% {
+    transform: translateY(200%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+@keyframes scanLine {
+  0% {
+    top: -2px;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    top: 100%;
+    opacity: 0;
+  }
+}
+
+@keyframes gentleSwing {
+  0%, 100% {
+    transform: translateX(-2px) rotate(0.5deg);
+  }
+  50% {
+    transform: translateX(2px) rotate(-0.5deg);
+  }
+}
+
+@keyframes hologramShift {
+  0%, 100% {
+    background: linear-gradient(45deg, rgba(0, 255, 255, 0.1), rgba(255, 0, 255, 0.1), rgba(0, 255, 255, 0.1));
+    box-shadow: 0 0 40px rgba(0, 255, 255, 0.3), inset 0 0 40px rgba(255, 0, 255, 0.1);
+  }
+  25% {
+    background: linear-gradient(45deg, rgba(255, 0, 255, 0.15), rgba(0, 255, 0, 0.1), rgba(255, 0, 255, 0.15));
+    box-shadow: 0 0 40px rgba(255, 0, 255, 0.4), inset 0 0 40px rgba(0, 255, 0, 0.1);
+  }
+  50% {
+    background: linear-gradient(45deg, rgba(0, 255, 0, 0.1), rgba(0, 0, 255, 0.15), rgba(0, 255, 0, 0.1));
+    box-shadow: 0 0 40px rgba(0, 255, 0, 0.3), inset 0 0 40px rgba(0, 0, 255, 0.2);
+  }
+  75% {
+    background: linear-gradient(45deg, rgba(255, 255, 0, 0.1), rgba(255, 0, 255, 0.1), rgba(255, 255, 0, 0.1));
+    box-shadow: 0 0 40px rgba(255, 255, 0, 0.3), inset 0 0 40px rgba(255, 0, 255, 0.1);
+  }
+}
+
+@keyframes holographicText {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes energyPulse {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.05);
+  }
+}
