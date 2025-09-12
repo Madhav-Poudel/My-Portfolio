@@ -91,9 +91,13 @@ const Navigation = () => {
             <a
               href="/CV-Madhav.pdf"
               download
-              className="px-3 py-1.5 text-xs lg:text-sm text-cyan-400 hover:text-white transition-all duration-300 font-medium border border-cyan-400 rounded ml-2"
+              className="inline-flex items-center space-x-2 px-4 py-2 text-sm text-white bg-slate-600 hover:bg-slate-700 rounded-full shadow-sm transition-colors duration-200 ml-2"
+              aria-label="Download CV"
             >
-              Download CV
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 5v14m7-7H5" />
+              </svg>
+              <span>Download CV</span>
             </a>
           </div>
 
@@ -160,9 +164,13 @@ const Navigation = () => {
               <a
                 href="/CV-Madhav.pdf"
                 download
-                className="block w-full text-left px-3 py-2 text-xs text-cyan-400 hover:text-white hover:bg-slate-800/60 rounded border border-cyan-400 mt-2"
+                className="flex items-center space-x-2 px-3 py-2 text-sm text-white bg-slate-600 hover:bg-slate-700 rounded-full shadow-sm transition-colors duration-200 mt-2"
+                aria-label="Download CV"
               >
-                Download CV
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 5v14m7-7H5" />
+                </svg>
+                <span>Download CV</span>
               </a>
             </div>
           </div>
