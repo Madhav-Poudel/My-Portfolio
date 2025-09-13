@@ -428,8 +428,8 @@ const HeroSection = () => {
       <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center relative z-40">
         {/* Left Content (text) - on small screens show first, on large keep as left column */}
         <div className="hero-text-slide mt-32 sm:mt-40 lg:mt-32 flex flex-col items-start justify-center text-left order-1 lg:order-1 w-full">
-    {/* Hero Main Text Block */}
-<div className="hero-main-text -mt-28"> 
+  {/* Hero Main Text Block */}
+<div className="hero-main-text -mt-10 sm:-mt-28"> 
   <div className="mb-3 sm:mb-4 text-lg sm:text-xl lg:text-2xl xl:text-3xl text-portfolio-accent font-bold">
     Hey,
   </div>
