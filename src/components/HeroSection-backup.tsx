@@ -224,6 +224,8 @@ const HeroSection = () => {
                 src={presidentPortrait} 
                 alt="Sandesh Tamang" 
                 className="relative w-80 h-80 object-cover rounded-full border-4 border-cyan-400 shadow-2xl hover:scale-105 transition-transform duration-300"
+                style={{ WebkitUserDrag: 'none' }}
+                draggable={false}
                 onContextMenu={e => e.preventDefault()}
                 onDragStart={e => e.preventDefault()}
               />

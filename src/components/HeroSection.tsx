@@ -685,13 +685,8 @@ const HeroSection = () => {
             boxShadow: '0 0 20px rgba(6, 182, 212, 0.3)'
           }}
         >
-          <svg 
-            className="w-6 h-6 text-cyan-400 group-hover:text-cyan-300 transition-colors duration-300" 
-            fill="none" 
-            stroke="currentColor" 
-            viewBox="0 0 24 24"
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18" />
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-cyan-500">
+            <path d="M12 19V5M5 12l7-7 7 7" />
           </svg>
         </button>
       )}

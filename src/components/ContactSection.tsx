@@ -119,12 +119,17 @@ const ContactSection = () => {
     <section 
       id="contact" 
       ref={sectionRef} 
-      className="py-20 bg-slate-900 relative"
+      className="py-20 bg-slate-900 relative select-none"
       style={{
         backgroundImage: `url('https://images.unsplash.com/photo-1504639725590-34d0984388bd?ixlib=rb-4.0.3&auto=format&fit=crop&w=2074&q=80')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat'
+        backgroundRepeat: 'no-repeat',
+  userSelect: 'none',
+  WebkitUserSelect: 'none',
+  MozUserSelect: 'none',
+  msUserSelect: 'none',
+  KhtmlUserSelect: 'none'
       }}
     >
       {/* Background overlay with gradient */}
@@ -155,7 +160,7 @@ const ContactSection = () => {
             
             <div className="relative z-10">
               <div className="flex items-center mb-8">
-                <div className="w-12 h-12 bg-blue-500 rounded-xl flex items-center justify-center mr-4 shadow-lg">
+                <div className="w-12 h-12 rounded-xl flex items-center justify-center mr-4 shadow-lg" style={{backgroundColor: '#1fade4'}}>
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
@@ -181,7 +186,7 @@ const ContactSection = () => {
                   onChange={handleChange}
                   required
                   className="w-full px-5 py-4 bg-gray-700 border border-gray-600 rounded-xl text-white placeholder-gray-400 focus:border-orange-400 focus:outline-none transition-all duration-300 hover:border-gray-500"
-                  placeholder="Enter your full name"
+                  placeholder="Madhav Poudel"
                 />
               </div>
 
@@ -197,12 +202,12 @@ const ContactSection = () => {
                   onChange={handleChange}
                   required
                   className="w-full px-5 py-4 bg-gray-700 border border-gray-600 rounded-xl text-white placeholder-gray-400 focus:border-orange-400 focus:outline-none transition-all duration-300 hover:border-gray-500"
-                  placeholder="your.email@example.com"
+                  placeholder="madhavpoudel@gmail.com"
                 />
               </div>
 
               <div className="relative">
-                <label htmlFor="message" className="block text-blue-400 font-medium mb-3 text-sm uppercase tracking-wide">
+                <label htmlFor="message" className="block font-medium mb-3 text-sm uppercase tracking-wide" style={{color: '#1fade4'}}>
                   Message
                 </label>
                 <textarea
@@ -220,7 +225,8 @@ const ContactSection = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-blue-800 hover:bg-blue-900 text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center space-x-2"
+                className="w-full text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center space-x-2"
+                style={{backgroundColor: '#1fade4'}}
               >
                 <span>{isSubmitting ? 'Sending...' : 'Send Message'}</span>
               </button>

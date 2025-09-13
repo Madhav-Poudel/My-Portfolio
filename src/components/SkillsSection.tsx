@@ -115,7 +115,7 @@ const SkillsSection = () => {
           <div className="absolute top-16 left-[10%] text-orange-400/20 text-6xl animate-bounce" style={{animationDuration: '4s'}}>
             <div>⚛️</div>
           </div>
-          <div className="absolute top-24 right-[15%] text-blue-400/25 text-5xl animate-bounce" style={{animationDuration: '3.5s', animationDelay: '1s'}}>
+          <div className="absolute top-24 right-[15%] animate-bounce" style={{animationDuration: '3.5s', animationDelay: '1s', color: '#1fade4', opacity: 0.25, fontSize: '3rem'}}>
             <div>💻</div>
           </div>
           <div className="absolute bottom-20 left-[12%] text-green-400/20 text-5xl animate-bounce" style={{animationDuration: '3s', animationDelay: '2s'}}>
@@ -134,7 +134,7 @@ const SkillsSection = () => {
 
         {/* Tech Skills Code Snippets */}
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-12 left-[25%] text-blue-400/15 font-mono text-base animate-pulse" style={{animationDuration: '2.5s'}}>
+          <div className="absolute top-12 left-[25%] font-mono text-base animate-pulse" style={{animationDuration: '2.5s', color: '#1fade4', opacity: 0.15}}>
             <div className="space-y-2">
               <div>const skills = [</div>
               <div>  'React', 'Node.js',</div>
@@ -174,7 +174,7 @@ const SkillsSection = () => {
         {/* Technology Constellation */}
         <div className="absolute inset-0">
           {/* Tech constellation circles */}
-          <div className="absolute top-20 left-20 w-80 h-80 border border-blue-400/15 rounded-full animate-spin" style={{animationDuration: '40s'}}></div>
+          <div className="absolute top-20 left-20 w-80 h-80 border rounded-full animate-spin" style={{animationDuration: '40s', borderColor: '#1fade4', opacity: 0.15}}></div>
           <div className="absolute top-28 left-28 w-64 h-64 border border-cyan-400/20 rounded-full animate-spin" style={{animationDuration: '35s', animationDirection: 'reverse'}}></div>
           <div className="absolute top-36 left-36 w-48 h-48 border border-purple-400/15 rounded-full animate-spin" style={{animationDuration: '30s'}}></div>
           
@@ -182,7 +182,7 @@ const SkillsSection = () => {
           <div className="absolute bottom-24 right-24 w-56 h-56 border border-orange-400/20 rounded-full animate-spin" style={{animationDuration: '38s', animationDirection: 'reverse'}}></div>
           
           {/* Tech skill nodes */}
-          <div className="absolute top-32 left-[240px] w-4 h-4 bg-blue-400/30 rounded-full animate-pulse"></div>
+          <div className="absolute top-32 left-[240px] w-4 h-4 rounded-full animate-pulse" style={{backgroundColor: '#1fade4', opacity: 0.3}}></div>
           <div className="absolute top-[160px] left-[180px] w-3 h-3 bg-cyan-400/40 rounded-full animate-pulse" style={{animationDelay: '1s'}}></div>
           <div className="absolute top-[120px] left-[320px] w-5 h-5 bg-purple-400/25 rounded-full animate-pulse" style={{animationDelay: '2s'}}></div>
           <div className="absolute bottom-[100px] right-[200px] w-4 h-4 bg-green-400/35 rounded-full animate-pulse" style={{animationDelay: '0.5s'}}></div>
@@ -194,7 +194,7 @@ const SkillsSection = () => {
           <svg className="absolute inset-0 w-full h-full opacity-10">
             <defs>
               <linearGradient id="skillsNetwork" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stopColor="#3b82f6" stopOpacity="0.6"/>
+                <stop offset="0%" stopColor="#1fade4" stopOpacity="0.6"/>
                 <stop offset="20%" stopColor="#06b6d4" stopOpacity="0.7"/>
                 <stop offset="40%" stopColor="#8b5cf6" stopOpacity="0.5"/>
                 <stop offset="60%" stopColor="#10b981" stopOpacity="0.6"/>
@@ -218,7 +218,7 @@ const SkillsSection = () => {
             </path>
             
             {/* Skill connection nodes */}
-            <circle cx="400" cy="100" r="8" fill="#3b82f6" opacity="0.6">
+            <circle cx="400" cy="100" r="8" fill="#1fade4" opacity="0.6">
               <animate attributeName="r" values="8;16;8" dur="4s" repeatCount="indefinite"/>
             </circle>
             <circle cx="600" cy="200" r="6" fill="#06b6d4" opacity="0.7">
@@ -235,7 +235,7 @@ const SkillsSection = () => {
 
         {/* Floating Skill Categories */}
         <div className="absolute inset-0">
-          <div className="absolute top-[20%] left-[75%] px-4 py-2 bg-blue-500/15 border border-blue-400/25 rounded-lg text-blue-300 text-sm font-semibold animate-pulse" style={{animationDuration: '3s'}}>
+          <div className="absolute top-[20%] left-[75%] px-4 py-2 rounded-lg text-sm font-semibold animate-pulse" style={{animationDuration: '3s', backgroundColor: 'rgba(31, 173, 228, 0.15)', borderColor: '#1fade4', color: '#1fade4'}}>
             Frontend
           </div>
           <div className="absolute top-[35%] right-[10%] px-4 py-2 bg-green-500/15 border border-green-400/25 rounded-lg text-green-300 text-sm font-semibold animate-pulse" style={{animationDuration: '4s', animationDelay: '1s'}}>

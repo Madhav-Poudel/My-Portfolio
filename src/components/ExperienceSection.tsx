@@ -1,4 +1,9 @@
 import { useEffect, useRef } from 'react';
+import csitanLogo from '../assets/rupandehi.png';
+import emonicsLogo from '../assets/Emonics.png';
+import coderawlingoLogo from '../assets/coderawlingo.png';
+import bootwalLogo from '../assets/bootwal.png';
+import nepathyaLogo from '../assets/nepathya.png';
 
 const ExperienceSection = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -29,7 +34,8 @@ const ExperienceSection = () => {
       period: "2024 - Present",
       description: "Leading the CSIT Association of Nepal-Rupandehi, organizing events, managing teams, and representing the association at various platforms. Promoting technology education and collaboration among students.",
       technologies: ["Leadership", "Event Management", "Teamwork", "Public Speaking"],
-      type: "Leadership"
+      type: "Leadership",
+      logo: csitanLogo
     },
     {
       title: "Full Stack Developer",
@@ -37,7 +43,8 @@ const ExperienceSection = () => {
       period: "2025 - Present",
       description: "Developing modern web applications using React, Node.js, and cloud technologies. Leading a team of 3 developers and implementing best practices.",
       technologies: ["React", "Node.js", "MongoDB", "AWS", "Docker"],
-      type: "Part-time"
+      type: "Part-time",
+      logo: emonicsLogo
     },
     {
       title: "Full Stack Developer",
@@ -45,7 +52,8 @@ const ExperienceSection = () => {
       period: "2024 - 2025",
       description: "Developing full-stack web applications using React for frontend and Java Spring Boot for backend. Working with PostgreSQL databases and implementing RESTful APIs for various client projects.",
       technologies: ["React", "Java", "Spring Boot", "PostgreSQL"],
-      type: "Full-time"
+      type: "Full-time",
+      logo: coderawlingoLogo
     },
     {
       title: "Junior Frontend Developer",
@@ -53,7 +61,8 @@ const ExperienceSection = () => {
       period: "2023 - 2024",
       description: "Developed responsive user interfaces using HTML, CSS, and React. Collaborated with the development team to create user-friendly web applications and gained hands-on experience in modern frontend technologies.",
       technologies: ["HTML", "CSS", "React"],
-      type: "Full-time"
+      type: "Full-time",
+      logo: bootwalLogo
     },
     {
       title: "Computer Science Student",
@@ -61,7 +70,8 @@ const ExperienceSection = () => {
       period: "2022 - Present",
       description: "Currently pursuing Bachelor's degree in Computer Science with focus on software engineering, algorithms, and database systems. Learning programming fundamentals and object-oriented programming concepts.",
       technologies: ["Java", "C++", "Data Structures", "C#"],
-      type: "Education"
+      type: "Education",
+      logo: nepathyaLogo
     }
   ];
 
@@ -252,9 +262,14 @@ const ExperienceSection = () => {
               {/* Experience card */}
               <div className="ml-12 bg-gradient-to-br from-slate-800 to-slate-900 rounded-lg p-6 border border-slate-700 hover:border-cyan-400 transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/25">
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-                  <div>
-                    <h3 className="text-xl font-bold text-white mb-1">{exp.title}</h3>
-                    <p className="text-cyan-400 font-medium">{exp.company}</p>
+                  <div className="flex items-center gap-4">
+                    {exp.logo && (
+                      <img src={exp.logo} alt={exp.company + ' logo'} className="w-12 h-12 object-contain rounded-full border border-gray-700 bg-white p-1" />
+                    )}
+                    <div>
+                      <h3 className="text-xl font-bold text-white mb-1">{exp.title}</h3>
+                      <p className="text-cyan-400 font-medium">{exp.company}</p>
+                    </div>
                   </div>
                   <div className="flex items-center gap-4 mt-2 md:mt-0">
                     <span className="text-gray-400 text-sm">{exp.period}</span>

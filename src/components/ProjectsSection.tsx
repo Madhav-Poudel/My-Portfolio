@@ -31,7 +31,7 @@ const ProjectsSection = () => {
       title: "CSITAN Rupandehi Website",
       description: "Official website for CSIT Association of Nepal - Rupandehi, a non-profit organization dedicated to bridging the gap between CSIT students, universities, and the industry. Features member testimonials, event management, team profiles, and community engagement tools.",
       tech: ["React", "Vite", "Tailwind CSS", "JavaScript"],
-      github: "#",
+      github: "https://github.com/Madhav-Poudel/CSITAN-Rupandehi-WebsiteDemo",
       live: "https://rupandehi.csitan.org.np/",
       image: csitanWebsite
     },
@@ -39,7 +39,7 @@ const ProjectsSection = () => {
       title: "HireSphere - Job Portal",
       description: "A comprehensive job portal platform where job seekers can find their dream jobs and companies can hire talent. Features include user profiles, skill management, resume building, job applications, and admin job postings with 10K+ users successfully placed.",
       tech: ["React","Java", "SpringBoot", "MongoDB", "Express"],
-      github: "#",
+      github: "https://github.com/Madhav-Poudel/FullStack-HireSphere-Project",
       live: "https://hire-sphere-rouge.vercel.app/",
       image: hiresphere
     },
@@ -48,14 +48,14 @@ const ProjectsSection = () => {
       description: "A comprehensive e-commerce platform built with Spring Boot featuring user authentication, product catalog management, shopping cart functionality, order processing, and admin dashboard for inventory management.",
       tech: ["Spring Boot", "Java", "MySQL", "Thymeleaf", "Bootstrap"],
       github: "https://github.com/Madhav-Poudel/Spring-boot-Ecommerce",
-      live: "https://e-commerce-murex-ten-62.vercel.app/",
+      live: "https://github.com/Madhav-Poudel/Spring-boot-Ecommerce",
       image: ecommerce
     },
     {
       title: "HamroCSIT Clone",
       description: "A comprehensive educational platform for B.Sc. CSIT students featuring semester-wise notes, question banks, entrance preparation materials, and interactive study resources with user-friendly navigation.",
       tech: ["React", "TypeScript", "Tailwind CSS", "Vercel"],
-      github: "https://github.com/username/hamrocsit-clone",
+      github: "https://github.com/Madhav-Poudel/HamroCSIT-Clone",
       live: "https://hamrocsitclone-phi.vercel.app/",
       image: hamrocsit
     }
@@ -70,7 +70,7 @@ const ProjectsSection = () => {
         <div className="absolute inset-0 overflow-hidden">
           {/* Floating Dev Icons */}
           <div className="absolute top-16 left-[8%] text-blue-400/25 text-4xl animate-bounce" style={{animationDuration: '3s'}}>
-            <div>⚛️</div>
+            <div style={{color: '#1fade4', opacity: 0.25, fontSize: '2.25rem'}}>⚛️</div>
           </div>
           <div className="absolute top-24 right-[12%] text-green-400/30 text-3xl animate-bounce" style={{animationDuration: '4s', animationDelay: '1s'}}>
             <div>🔧</div>
@@ -101,7 +101,7 @@ const ProjectsSection = () => {
           </div>
           
           <div className="absolute top-32 right-[25%] text-blue-400/25 font-mono text-base animate-pulse" style={{animationDuration: '3s', animationDelay: '1s'}}>
-            <div className="space-y-2">
+            <div className="space-y-2" style={{color: '#1fade4', opacity: 0.25}}>
               <div>npm create react-app</div>
               <div>npm install</div>
               <div>npm run build</div>
@@ -131,13 +131,13 @@ const ProjectsSection = () => {
         {/* Tech Stack Orbital Animation */}
         <div className="absolute inset-0">
           {/* Large orbital rings */}
-          <div className="absolute top-20 left-20 w-64 h-64 border border-blue-400/20 rounded-full animate-spin" style={{animationDuration: '30s'}}></div>
+          <div className="absolute top-20 left-20 w-64 h-64 border rounded-full animate-spin" style={{animationDuration: '30s', borderColor: '#1fade4', opacity: 0.2}}></div>
           <div className="absolute top-28 left-28 w-48 h-48 border border-cyan-400/15 rounded-full animate-spin" style={{animationDuration: '25s', animationDirection: 'reverse'}}></div>
           <div className="absolute bottom-16 right-16 w-72 h-72 border border-purple-400/15 rounded-full animate-spin" style={{animationDuration: '35s'}}></div>
           <div className="absolute bottom-24 right-24 w-56 h-56 border border-green-400/20 rounded-full animate-spin" style={{animationDuration: '28s', animationDirection: 'reverse'}}></div>
           
           {/* Small tech dots on orbits */}
-          <div className="absolute top-32 left-[200px] w-3 h-3 bg-blue-400/40 rounded-full animate-pulse"></div>
+          <div className="absolute top-32 left-[200px] w-3 h-3 rounded-full animate-pulse" style={{backgroundColor: '#1fade4', opacity: 0.4}}></div>
           <div className="absolute top-[140px] left-[160px] w-2 h-2 bg-cyan-400/50 rounded-full animate-pulse" style={{animationDelay: '1s'}}></div>
           <div className="absolute bottom-[100px] right-[180px] w-4 h-4 bg-purple-400/35 rounded-full animate-pulse" style={{animationDelay: '2s'}}></div>
           <div className="absolute bottom-[140px] right-[140px] w-3 h-3 bg-green-400/45 rounded-full animate-pulse" style={{animationDelay: '0.5s'}}></div>
@@ -148,7 +148,7 @@ const ProjectsSection = () => {
           <svg className="absolute inset-0 w-full h-full opacity-15">
             <defs>
               <linearGradient id="projectFlow" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stopColor="#3b82f6" stopOpacity="0.8"/>
+                <stop offset="0%" stopColor="#1fade4" stopOpacity="0.8"/>
                 <stop offset="25%" stopColor="#06b6d4" stopOpacity="0.6"/>
                 <stop offset="50%" stopColor="#8b5cf6" stopOpacity="0.7"/>
                 <stop offset="75%" stopColor="#10b981" stopOpacity="0.5"/>
@@ -168,7 +168,7 @@ const ProjectsSection = () => {
             </path>
             
             {/* Data flow nodes */}
-            <circle cx="400" cy="80" r="6" fill="#3b82f6" opacity="0.8">
+            <circle cx="400" cy="80" r="6" fill="#1fade4" opacity="0.8">
               <animate attributeName="r" values="6;12;6" dur="3s" repeatCount="indefinite"/>
             </circle>
             <circle cx="700" cy="180" r="5" fill="#06b6d4" opacity="0.7">
@@ -182,7 +182,7 @@ const ProjectsSection = () => {
 
         {/* Floating Tech Badges */}
         <div className="absolute inset-0">
-          <div className="absolute top-[15%] left-[70%] px-3 py-1 bg-blue-500/20 border border-blue-400/30 rounded-full text-blue-300 text-sm font-mono animate-pulse" style={{animationDuration: '3s'}}>
+          <div className="absolute top-[15%] left-[70%] px-3 py-1 rounded-full text-sm font-mono animate-pulse" style={{animationDuration: '3s', backgroundColor: 'rgba(31, 173, 228, 0.2)', borderColor: '#1fade4', color: '#1fade4'}}>
             React
           </div>
           <div className="absolute top-[25%] right-[15%] px-3 py-1 bg-green-500/20 border border-green-400/30 rounded-full text-green-300 text-sm font-mono animate-pulse" style={{animationDuration: '4s', animationDelay: '1s'}}>
@@ -221,18 +221,18 @@ const ProjectsSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
           {projects.map((project, index) => (
-            <div key={project.title} className="project-card group">
-              <div className="mb-4 overflow-hidden rounded-lg">
-                <img 
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-40 sm:h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-                  onContextMenu={e => e.preventDefault()}
-                  onDragStart={e => e.preventDefault()}
-                />
-              </div>
+            <div key={project.title} className="project-card bg-gray-800 rounded-xl p-4 shadow-lg" style={{ transition: 'none', transform: 'none' }}>
+                <div className="mb-4 overflow-hidden rounded-xl shadow-lg border-2 border-gray-800">
+                  <img 
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-56 sm:h-64 object-cover hover:scale-105 transition-transform duration-300"
+                    onContextMenu={e => e.preventDefault()}
+                    onDragStart={e => e.preventDefault()}
+                  />
+                </div>
               <div className="mb-4">
-                <h3 className="text-2xl font-bold text-portfolio-text mb-3 group-hover:text-portfolio-accent transition-colors">
+                <h3 className="text-2xl font-bold text-portfolio-text mb-3 transition-colors">
                   {project.title}
                 </h3>
                 <p className="text-portfolio-text-muted leading-relaxed">
@@ -251,21 +251,27 @@ const ProjectsSection = () => {
               <div className="flex gap-4">
                 <a 
                   href={project.github}
-                  className="inline-flex items-center text-portfolio-text-muted hover:text-portfolio-accent transition-colors"
+                  className="inline-flex items-center gap-2 px-5 py-2 rounded-md font-semibold text-white shadow focus:outline-none transition-all duration-200"
+                  style={{backgroundColor: '#1fade4', borderColor: '#1fade4', boxShadow: '0 2px 8px rgba(59,130,246,0.10)'}}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
                   </svg>
-                  Code
+                  <span>Code</span>
                 </a>
                 <a 
                   href={project.live}
-                  className="inline-flex items-center text-portfolio-text-muted hover:text-portfolio-accent transition-colors"
+                  className="inline-flex items-center gap-2 px-5 py-2 rounded-md font-semibold text-white bg-green-600 border border-green-400 shadow hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-400 transition-all duration-200"
+                  style={{ boxShadow: '0 2px 8px rgba(16,185,129,0.10)' }}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                   </svg>
-                  Live Demo
+                  <span>Live Demo</span>
                 </a>
               </div>
             </div>

@@ -46,22 +46,22 @@ const AboutSection = () => {
       <div className="absolute inset-0 z-0">
         {/* Animated solid color lines */}
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-0 left-[10%] w-0.5 h-full bg-blue-700 opacity-40 animate-pulse" style={{animationDuration: '2s'}}></div>
+          <div className="absolute top-0 left-[10%] w-0.5 h-full animate-pulse" style={{animationDuration: '2s', backgroundColor: '#1fade4', opacity: 0.4}}></div>
           <div className="absolute top-0 left-[25%] w-0.5 h-full bg-cyan-700 opacity-30 animate-pulse" style={{animationDuration: '3s', animationDelay: '0.5s'}}></div>
           <div className="absolute top-0 left-[40%] w-0.5 h-full bg-green-700 opacity-30 animate-pulse" style={{animationDuration: '2.5s', animationDelay: '1s'}}></div>
           <div className="absolute top-0 left-[55%] w-0.5 h-full bg-purple-700 opacity-30 animate-pulse" style={{animationDuration: '3.5s', animationDelay: '1.5s'}}></div>
-          <div className="absolute top-0 left-[70%] w-0.5 h-full bg-blue-800 opacity-30 animate-pulse" style={{animationDuration: '2.8s', animationDelay: '2s'}}></div>
+          <div className="absolute top-0 left-[70%] w-0.5 h-full animate-pulse" style={{animationDuration: '2.8s', animationDelay: '2s', backgroundColor: '#1fade4', opacity: 0.3}}></div>
           <div className="absolute top-0 left-[85%] w-0.5 h-full bg-cyan-800 opacity-30 animate-pulse" style={{animationDuration: '4s', animationDelay: '2.5s'}}></div>
         </div>
 
         {/* Geometric shapes with solid borders and shadows */}
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-16 left-16 w-48 h-48 border-2 border-blue-800 rounded-full shadow-2xl animate-spin" style={{animationDuration: '20s'}}></div>
+          <div className="absolute top-16 left-16 w-48 h-48 border-2 rounded-full shadow-2xl animate-spin" style={{animationDuration: '20s', borderColor: '#1fade4'}}></div>
           <div className="absolute top-24 right-20 w-32 h-32 border-2 border-cyan-800 rounded-full shadow-xl animate-spin" style={{animationDuration: '15s', animationDirection: 'reverse'}}></div>
           <div className="absolute bottom-24 left-24 w-56 h-56 border-2 border-purple-800 rounded-full shadow-2xl animate-spin" style={{animationDuration: '25s'}}></div>
           <div className="absolute bottom-16 right-16 w-40 h-40 border-2 border-green-800 rounded-full shadow-xl animate-spin" style={{animationDuration: '18s', animationDirection: 'reverse'}}></div>
           <div className="absolute top-1/3 left-1/3 w-24 h-24 border border-cyan-800 rotate-45 shadow-lg animate-pulse" style={{animationDuration: '3s'}}></div>
-          <div className="absolute top-2/3 right-1/4 w-20 h-20 border border-blue-800 rotate-12 shadow-lg animate-pulse" style={{animationDuration: '4s', animationDelay: '1s'}}></div>
+          <div className="absolute top-2/3 right-1/4 w-20 h-20 border rotate-12 shadow-lg animate-pulse" style={{animationDuration: '4s', animationDelay: '1s', borderColor: '#1fade4'}}></div>
         </div>
 
         {/* Dark overlay for text readability */}
@@ -78,8 +78,8 @@ const AboutSection = () => {
             <div className="mx-4 w-2 h-2 bg-cyan-400 rounded-full"></div>
             <div className="h-px bg-gray-700 flex-1 max-w-16"></div>
           </div>
-          <div className="mx-auto max-w-2xl bg-gray-900/80 rounded-2xl shadow-2xl p-8 backdrop-blur-md border border-gray-800">
-            <p className="text-xl text-gray-200 leading-relaxed">
+          <div className="mx-auto max-w-2xl">
+            <p className="text-xl text-gray-200 leading-relaxed max-w-4xl mx-auto">
               I'm a passionate Full Stack Developer with expertise across the entire development lifecycle.<br/>
               From crafting beautiful user experiences to building robust backend systems, I bring ideas to life<br/>
               through clean, efficient code and modern technologies.

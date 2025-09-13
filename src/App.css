@@ -1,3 +1,14 @@
+
+
+#root, html, body, * {
+  user-select: auto;
+  -webkit-user-select: auto;
+  -moz-user-select: auto;
+  -ms-user-select: auto;
+  -khtml-user-select: auto;
+  -webkit-user-drag: none;
+}
+
 #root {
   width: 100%;
   margin: 0;
