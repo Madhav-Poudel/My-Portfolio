@@ -56,7 +56,7 @@ const HeroSection = () => {
         {/* Simple Code Box */}
         <div className="absolute inset-0 overflow-hidden">
           {/* Code Box - Top center */}
-          <div className="absolute top-16 left-1/2 transform -translate-x-1/2 translate-x-[500px] p-4 bg-black/95 border border-gray-600/20 rounded-lg backdrop-blur-sm text-xs opacity-20">
+          <div className="absolute top-[550px] left-1/2 transform -translate-x-1/2 translate-x-[500px] p-4 bg-black/95 border border-gray-600/20 rounded-lg backdrop-blur-sm text-xs opacity-40">
             <div className="text-gray-400 font-mono space-y-1">
               <div className="text-cyan-300">const data = await fetch('/api/users');</div>
               <div className="text-yellow-300">if (data.ok) &#123;</div>
@@ -428,29 +428,78 @@ const HeroSection = () => {
       <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center relative z-40">
         {/* Left Content (text) - on small screens show first, on large keep as left column */}
         <div className="hero-text-slide mt-32 sm:mt-40 lg:mt-32 flex flex-col items-start justify-center text-left order-1 lg:order-1 w-full">
-          <div className="mb-3 sm:mb-4 text-lg sm:text-xl lg:text-2xl xl:text-3xl text-portfolio-accent font-bold">Hey,</div>
-          <h1 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold mb-4 sm:mb-6 leading-tight text-left">
-            <span className="text-portfolio-text block">I build thoughtful web products.</span>
-          </h1>
-          
-          <p className="text-base sm:text-lg lg:text-xl text-portfolio-text-muted mb-6 sm:mb-8 leading-relaxed text-left max-w-lg">
-            Full-Stack Developer crafting exceptional digital experiences with modern technologies and clean, scalable code.
-          </p>
+    {/* Hero Main Text Block */}
+<div className="hero-main-text -mt-28"> 
+  <div className="mb-3 sm:mb-4 text-lg sm:text-xl lg:text-2xl xl:text-3xl text-portfolio-accent font-bold">
+    Hey,
+  </div>
 
-          {/* Status Indicator */}
-          <div className="mt-4 sm:mt-6 mb-6 sm:mb-8">
-            <div className="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-green-900/30 to-emerald-900/30 border border-green-500/40 rounded-full backdrop-blur-sm hover:scale-105 transition-all duration-300 group">
-              <div className="relative">
-                <div className="w-2 h-2 sm:w-3 sm:h-3 bg-green-500 rounded-full animate-pulse"></div>
-                <div className="absolute inset-0 w-2 h-2 sm:w-3 sm:h-3 bg-green-400 rounded-full animate-ping opacity-75"></div>
-              </div>
-              <span className="ml-2 sm:ml-3 text-green-300 font-semibold text-xs sm:text-sm tracking-wide group-hover:text-green-200 transition-colors duration-300">
-                Available for new projects
-              </span>
-              <div className="ml-2 w-1 h-1 bg-green-400 rounded-full opacity-60"></div>
-            </div>
-          </div>
-        </div>
+  <h1 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold mb-4 sm:mb-6 leading-tight text-left">
+    <span className="text-portfolio-text block">I build thoughtful web products.</span>
+  </h1>
+
+  <p className="text-base sm:text-lg lg:text-xl text-portfolio-text-muted mb-6 sm:mb-8 leading-relaxed text-left max-w-lg">
+    Full-Stack Developer crafting exceptional digital experiences with modern technologies and clean, scalable code.
+  </p>
+</div>
+
+         {/* Enhanced Status Card - Available for New Projects */}
+         <div className="mt-6 sm:mt-8 relative z-10 flex justify-start">
+           <div className="relative group">
+             {/* Background glow effect */}
+             <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/20 via-blue-500/20 to-purple-500/20 rounded-xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-500"></div>
+
+             {/* Main card */}
+             <div className="relative backdrop-blur-md bg-black/40 border border-cyan-500/30 rounded-xl p-4 sm:p-5 shadow-2xl hover:shadow-cyan-500/20 transition-all duration-500 hover:scale-105"
+                  style={{
+                    boxShadow: '0 0 30px rgba(6, 182, 212, 0.2), inset 0 0 30px rgba(6, 182, 212, 0.1)'
+                  }}>
+
+               {/* Animated border */}
+               <div className="absolute inset-0 rounded-xl border border-cyan-400/50 animate-pulse"
+                    style={{
+                      background: 'linear-gradient(45deg, transparent, rgba(6, 182, 212, 0.1), transparent)',
+                      backgroundSize: '200% 200%',
+                      animation: 'borderGlow 3s ease-in-out infinite'
+                    }}>
+               </div>
+
+               {/* Content */}
+               <div className="relative z-10 flex items-center space-x-3">
+                 {/* Status icon with animation */}
+                 <div className="relative">
+                   <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-cyan-400 to-blue-600 rounded-full flex items-center justify-center shadow-lg">
+                     <svg className="w-5 h-5 sm:w-6 sm:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                     </svg>
+                   </div>
+                   {/* Pulsing ring */}
+                   <div className="absolute inset-0 w-10 h-10 sm:w-12 sm:h-12 border-2 border-cyan-400/50 rounded-full animate-ping"></div>
+                   <div className="absolute inset-0 w-10 h-10 sm:w-12 sm:h-12 border border-blue-400/30 rounded-full animate-pulse delay-300"></div>
+                 </div>
+
+                 {/* Status text */}
+                 <div className="space-y-1">
+                   <h4 className="text-cyan-300 font-bold text-sm sm:text-base tracking-wide">
+                     AVAILABLE FOR NEW PROJECTS
+                   </h4>
+                   <p className="text-blue-200/80 text-xs sm:text-sm font-medium">
+                     Let's build something amazing together
+                   </p>
+                 </div>
+
+                 {/* Decorative elements */}
+                 <div className="flex flex-col space-y-1 ml-2">
+                   <div className="w-1.5 h-1.5 bg-cyan-400 rounded-full animate-pulse"></div>
+                   <div className="w-1.5 h-1.5 bg-blue-400 rounded-full animate-pulse delay-200"></div>
+                   <div className="w-1.5 h-1.5 bg-purple-400 rounded-full animate-pulse delay-400"></div>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+
+       </div>
   {/* Right Content - Portrait (on small screens comes after text) */}
   <div className="flex justify-center lg:justify-end relative z-10 order-2 lg:order-2 w-full">
           <div className="hero-image-rise relative flex flex-col items-center justify-center mt-8 sm:mt-12 lg:mt-20 xl:mt-28 lg:mr-16 xl:mr-24">
@@ -539,8 +588,6 @@ const HeroSection = () => {
                   alt="Madhav Poudel - Professional Portrait"
                   className="w-full h-full object-cover scale-110"
                   style={{filter: 'contrast(1.1) brightness(1.05) saturate(1.1)'}}
-                  onContextMenu={e => e.preventDefault()}
-                  onDragStart={e => e.preventDefault()}
                 />
               </div>
 
@@ -600,15 +647,13 @@ const HeroSection = () => {
                 {/* Simple Title */}
                 <div className="relative">
                   <p className="text-blue-400 text-sm lg:text-base font-medium tracking-wider"
-                    style={{
+                     style={{
                        textShadow: '0 0 15px rgba(96, 165, 250, 0.8)',
                        fontWeight: '500',
                        letterSpacing: '2px'
                      }}>
                     Full Stack Developer
                   </p>
-                  {/* Available for new projects badge - solid, no gradient */}
-                  {/* Available for new projects badge */}
                   {/* Decorative dots */}
                   <div className="flex justify-center space-x-1 mt-1">
                     <div className="w-1 h-1 bg-blue-400 rounded-full animate-pulse"></div>
@@ -656,3 +701,4 @@ const HeroSection = () => {
 
 
 export default HeroSection;
+

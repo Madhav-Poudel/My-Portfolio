@@ -1,13 +1,14 @@
 /* Prevent drag and right-click save for all images */
 img {
   -webkit-user-drag: none;
-  user-drag: none;
+  -webkit-user-drag: none; /* Safari only, prevents image drag */
 }
 /* Custom text selection color for the whole website */
 ::selection {
   background: #f59e42; /* Classic orange */
   color: #fff;
 }
+/* These @tailwind rules require Tailwind CSS and PostCSS setup. If you see errors, check your build config. */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -129,7 +130,8 @@ img {
 
 @layer base {
   * {
-    @apply border-border;
+  /* @apply requires Tailwind CSS build setup. If you see errors, check your build config. */
+  @apply border-border;
   }
 
   html, body {
@@ -141,7 +143,8 @@ img {
   }
 
   body {
-    @apply bg-background text-foreground;
+  /* @apply requires Tailwind CSS build setup. If you see errors, check your build config. */
+  @apply bg-background text-foreground;
   }
 
   #root {
@@ -169,30 +172,36 @@ img {
   }
 
   .nav-link {
-    @apply relative uppercase tracking-wider font-medium text-portfolio-text-muted transition-colors duration-300 hover:text-portfolio-accent;
+  /* @apply requires Tailwind CSS build setup. If you see errors, check your build config. */
+  @apply relative uppercase tracking-wider font-medium text-portfolio-text-muted transition-colors duration-300 hover:text-portfolio-accent;
   }
 
   .nav-link::after {
     content: '';
-    @apply absolute bottom-0 left-0 w-0 h-0.5 bg-portfolio-accent transition-all duration-300;
+  /* @apply requires Tailwind CSS build setup. If you see errors, check your build config. */
+  @apply absolute bottom-0 left-0 w-0 h-0.5 bg-portfolio-accent transition-all duration-300;
   }
 
   .nav-link:hover::after {
-    @apply w-full;
+  /* @apply requires Tailwind CSS build setup. If you see errors, check your build config. */
+  @apply w-full;
   }
 
   .cta-button {
-    @apply inline-flex items-center px-8 py-4 bg-portfolio-accent text-white font-semibold rounded-xl 
+  /* @apply requires Tailwind CSS build setup. If you see errors, check your build config. */
+  @apply inline-flex items-center px-8 py-4 bg-portfolio-accent text-white font-semibold rounded-xl
            transition-all duration-300 hover:bg-portfolio-accent-hover hover:scale-105 hover:shadow-primary;
   }
 
   .project-card {
-    @apply bg-portfolio-charcoal border border-portfolio-gray rounded-xl p-6 transition-all duration-300 
+  /* @apply requires Tailwind CSS build setup. If you see errors, check your build config. */
+  @apply bg-portfolio-charcoal border border-portfolio-gray rounded-xl p-6 transition-all duration-300
            hover:scale-105 hover:bg-portfolio-gray hover:shadow-card cursor-pointer;
   }
 
   .skill-badge {
-    @apply inline-flex items-center px-4 py-2 bg-portfolio-gray text-portfolio-text rounded-lg 
+  /* @apply requires Tailwind CSS build setup. If you see errors, check your build config. */
+  @apply inline-flex items-center px-4 py-2 bg-portfolio-gray text-portfolio-text rounded-lg
            border border-portfolio-accent/20 transition-all duration-300 hover:border-portfolio-accent 
            hover:bg-portfolio-accent/10 hover:scale-105;
   }
