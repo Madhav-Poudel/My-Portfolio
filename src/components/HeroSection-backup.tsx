@@ -193,6 +193,13 @@ const HeroSection = () => {
                 Sandesh Tamang
               </span>
             </h1>
+                  {/* Available for new projects badge - solid, no gradient */}
+                  <div className="w-fit mb-6 animate-fade-in-delay flex items-center gap-2">
+                    <span className="px-4 py-2 rounded-lg bg-white/80 border border-green-500 text-green-700 font-semibold shadow flex items-center gap-2">
+                      <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="text-green-500"><circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" fill="#22c55e"/><path stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4"/></svg>
+                      Available for new projects
+                    </span>
+                  </div>
             <p className="text-xl md:text-2xl text-gray-300 mb-8 animate-fade-in-delay">
               Full Stack Developer & Computer Science Student
             </p>
@@ -209,15 +216,28 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Image */}
-          <div className="flex justify-center md:justify-end animate-fade-in-delay-3">
-            <div className="relative">
+          {/* Image and React code box on right */}
+          <div className="flex flex-col items-end animate-fade-in-delay-3">
+            <div className="relative mb-8">
               <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-full blur-lg opacity-30 animate-pulse"></div>
               <img 
                 src={presidentPortrait} 
                 alt="Sandesh Tamang" 
                 className="relative w-80 h-80 object-cover rounded-full border-4 border-cyan-400 shadow-2xl hover:scale-105 transition-transform duration-300"
+                onContextMenu={e => e.preventDefault()}
+                onDragStart={e => e.preventDefault()}
               />
+            </div>
+            {/* React code box moved to right side */}
+            <div className="w-fit bg-black/90 border border-gray-600/30 rounded-lg backdrop-blur-sm text-xs p-4 shadow-lg" style={{marginRight: 0}}>
+              <div className="text-gray-400 font-mono space-y-1">
+                <div className="text-cyan-300">const data = await fetch('/api/users');</div>
+                <div className="text-yellow-300">if (data.ok) &#123;</div>
+                <div className="text-green-300 ml-2">console.log('Success');</div>
+                <div className="text-purple-300 ml-2">updateUI(data.json());</div>
+                <div className="text-yellow-300">&#125;</div>
+                <div className="text-orange-300">export default App;</div>
+              </div>
             </div>
           </div>
         </div>

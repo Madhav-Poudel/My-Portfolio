@@ -56,7 +56,7 @@ const HeroSection = () => {
         {/* Simple Code Box */}
         <div className="absolute inset-0 overflow-hidden">
           {/* Code Box - Top center */}
-          <div className="absolute top-16 left-1/2 transform -translate-x-1/2 p-4 bg-black/95 border border-gray-600/20 rounded-lg backdrop-blur-sm text-xs opacity-40">
+          <div className="absolute top-16 left-1/2 transform -translate-x-1/2 translate-x-[500px] p-4 bg-black/95 border border-gray-600/20 rounded-lg backdrop-blur-sm text-xs opacity-20">
             <div className="text-gray-400 font-mono space-y-1">
               <div className="text-cyan-300">const data = await fetch('/api/users');</div>
               <div className="text-yellow-300">if (data.ok) &#123;</div>
@@ -539,6 +539,8 @@ const HeroSection = () => {
                   alt="Madhav Poudel - Professional Portrait"
                   className="w-full h-full object-cover scale-110"
                   style={{filter: 'contrast(1.1) brightness(1.05) saturate(1.1)'}}
+                  onContextMenu={e => e.preventDefault()}
+                  onDragStart={e => e.preventDefault()}
                 />
               </div>
 
@@ -598,13 +600,15 @@ const HeroSection = () => {
                 {/* Simple Title */}
                 <div className="relative">
                   <p className="text-blue-400 text-sm lg:text-base font-medium tracking-wider"
-                     style={{
+                    style={{
                        textShadow: '0 0 15px rgba(96, 165, 250, 0.8)',
                        fontWeight: '500',
                        letterSpacing: '2px'
                      }}>
                     Full Stack Developer
                   </p>
+                  {/* Available for new projects badge - solid, no gradient */}
+                  {/* Available for new projects badge */}
                   {/* Decorative dots */}
                   <div className="flex justify-center space-x-1 mt-1">
                     <div className="w-1 h-1 bg-blue-400 rounded-full animate-pulse"></div>

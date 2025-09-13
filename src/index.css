@@ -1,3 +1,13 @@
+/* Prevent drag and right-click save for all images */
+img {
+  -webkit-user-drag: none;
+  user-drag: none;
+}
+/* Custom text selection color for the whole website */
+::selection {
+  background: #f59e42; /* Classic orange */
+  color: #fff;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

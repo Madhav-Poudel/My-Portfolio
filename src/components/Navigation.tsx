@@ -23,7 +23,7 @@ const Navigation = () => {
             onClick={() => scrollToSection('hero')}
             aria-label="Home"
           >
-            <img src={logo} alt="Logo" className="h-8 w-8 sm:h-12 sm:w-12 object-contain" />
+            <img src={logo} alt="Logo" className="h-8 w-8 sm:h-12 sm:w-12 object-contain" onContextMenu={e => e.preventDefault()} onDragStart={e => e.preventDefault()} />
           </button>
           
           {/* Clean Desktop Navigation */}

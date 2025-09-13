@@ -224,9 +224,11 @@ const ProjectsSection = () => {
             <div key={project.title} className="project-card group">
               <div className="mb-4 overflow-hidden rounded-lg">
                 <img 
-                  src={project.image} 
+                  src={project.image}
                   alt={project.title}
                   className="w-full h-40 sm:h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                  onContextMenu={e => e.preventDefault()}
+                  onDragStart={e => e.preventDefault()}
                 />
               </div>
               <div className="mb-4">
