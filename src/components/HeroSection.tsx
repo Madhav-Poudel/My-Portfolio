@@ -595,7 +595,7 @@ const HeroSection = () => {
             </div>
 
             {/* Ultimate Holographic Card */}
-            <div className="mt-4 lg:mt-6 relative z-10 transform translate-x-0 lg:translate-x-2 xl:translate-x-4 flex justify-center">
+            <div className="mt-16 sm:mt-6 lg:mt-12 relative z-10 transform translate-x-0 lg:translate-x-2 xl:translate-x-4 flex justify-center">
               {/* Particle field - simplified colors */}
               <div className="absolute w-80 h-28">
                 <div className="absolute top-2 left-4 w-1 h-1 bg-cyan-400 rounded-full animate-ping delay-100"></div>
