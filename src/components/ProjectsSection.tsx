@@ -1,4 +1,6 @@
 import { useEffect, useRef } from 'react';
+import nepathon from '../assets/Nepathon.png';
+import appleStore from '../assets/AppleStore.png';
 import csitanWebsite from '../assets/csitan-website.png';
 import hiresphere from '../assets/hiresphere.png';
 import ecommerce from '../assets/E-Commerce.jpg';
@@ -28,6 +30,22 @@ const ProjectsSection = () => {
 
   const projects = [
     {
+      title: "HireSphere - Job Portal",
+      description: "A comprehensive job portal platform where job seekers can find their dream jobs and companies can hire talent. Features include user profiles, skill management, resume building, job applications, and admin job postings with 10K+ users successfully placed.",
+      tech: ["React","Java", "SpringBoot", "MongoDB", "Express"],
+      github: "https://github.com/Madhav-Poudel/FullStack-HireSphere-Project",
+      live: "https://hire-sphere-rouge.vercel.app/",
+      image: hiresphere
+    },
+    {
+      title: "Nepathon Vol. 1 Official Website",
+      description: "Nepathon is a national-level 48-hour hackathon organized by FusionStack and powered by Nepathya College. It offers a platform for students to brainstorm, build, and showcase innovative real-world solutions. Over three days, participants collaborate intensely to turn ideas into working prototypes.",
+      tech: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
+      github: "https://github.com/Madhav-Poudel/Nepathon-Vol.-1",
+      live: "http://nepathon.nepathyacollege.edu.np/",
+      image: nepathon
+    },
+    {
       title: "CSITAN Rupandehi Website",
       description: "Official website for CSIT Association of Nepal - Rupandehi, a non-profit organization dedicated to bridging the gap between CSIT students, universities, and the industry. Features member testimonials, event management, team profiles, and community engagement tools.",
       tech: ["React", "Vite", "Tailwind CSS", "JavaScript"],
@@ -36,12 +54,12 @@ const ProjectsSection = () => {
       image: csitanWebsite
     },
     {
-      title: "HireSphere - Job Portal",
-      description: "A comprehensive job portal platform where job seekers can find their dream jobs and companies can hire talent. Features include user profiles, skill management, resume building, job applications, and admin job postings with 10K+ users successfully placed.",
-      tech: ["React","Java", "SpringBoot", "MongoDB", "Express"],
-      github: "https://github.com/Madhav-Poudel/FullStack-HireSphere-Project",
-      live: "https://hire-sphere-rouge.vercel.app/",
-      image: hiresphere
+      title: "Apple Store Ecommerce FullStack",
+      description: "A premium Apple Store clone featuring modern e-commerce functionality with product browsing, detailed product pages, shopping cart, user authentication, payment integration, and responsive design. Built with React frontend and Node.js backend for seamless shopping experience.",
+      tech: ["React", "Node.js", "Express", "MongoDB", "Stripe", "Tailwind CSS"],
+      github: "https://github.com/Madhav-Poudel/Apple-Store-Ecommerce",
+      live: "https://apple-store-ecommerce.vercel.app/",
+      image: appleStore
     },
     {
       title: "Spring Boot E-commerce Platform",
@@ -227,8 +245,6 @@ const ProjectsSection = () => {
                     src={project.image}
                     alt={project.title}
                     className="w-full h-56 sm:h-64 object-cover hover:scale-105 transition-transform duration-300"
-                    onContextMenu={e => e.preventDefault()}
-                    onDragStart={e => e.preventDefault()}
                   />
                 </div>
               <div className="mb-4">

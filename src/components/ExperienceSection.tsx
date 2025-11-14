@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react';
+import nepathonLogo from '../assets/NepathonImg.png';
 import csitanLogo from '../assets/rupandehi.png';
 import emonicsLogo from '../assets/Emonics.png';
 import coderawlingoLogo from '../assets/coderawlingo.png';
@@ -36,6 +37,15 @@ const ExperienceSection = () => {
       technologies: ["Leadership", "Event Management", "Teamwork", "Public Speaking"],
       type: "Leadership",
       logo: csitanLogo
+    },
+    {
+      title: "Event Lead",
+      company: "Nepathon Vol. 1",
+      period: "October 28 - November 03, 2025",
+      description: "Led the organization and execution of Nepathon Vol. 1, a national-level 48-hour hackathon by FusionStack and Nepathya College. Coordinated event logistics, managed 100+ participants, and supervised technical competitions to facilitate innovative real-world solutions.",
+      technologies: ["Event Management", "Leadership", "Team Coordination", "Technical Supervision", "Project Management"],
+      type: "Leadership",
+      logo: nepathonLogo
     },
     {
       title: "Full Stack Developer",
@@ -264,7 +274,7 @@ const ExperienceSection = () => {
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                   <div className="flex items-center gap-4">
                     {exp.logo && (
-                      <img src={exp.logo} alt={exp.company + ' logo'} className="w-12 h-12 object-contain rounded-full border border-gray-700 bg-white p-1" />
+                      <img src={exp.logo} alt={exp.company + ' logo'} className={`w-12 h-12 object-contain rounded-full border border-gray-700 p-1 ${exp.logo === nepathonLogo ? 'bg-black' : 'bg-white'}`} />
                     )}
                     <div>
                       <h3 className="text-xl font-bold text-white mb-1">{exp.title}</h3>

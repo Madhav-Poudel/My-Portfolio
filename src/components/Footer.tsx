@@ -7,7 +7,7 @@ if (typeof document !== 'undefined') {
   link.rel = 'stylesheet';
   document.head.appendChild(link);
 }
-
+  
 const Footer = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
