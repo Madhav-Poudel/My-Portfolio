@@ -4,6 +4,7 @@ A modern, responsive portfolio website built with React, TypeScript, and Tailwin
 
 ## 🚀 Live Demo
 
+**Live Website**: [View Portfolio](https://madhav-poudel.github.io/My-Portfolio/)  
 **Repository**: https://github.com/Madhav-Poudel/My-Portfolio
 
 ## 🛠️ Development Setup
