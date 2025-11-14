@@ -1,7 +1,13 @@
-/* Prevent drag and right-click save for all images */
-img {
-  -webkit-user-drag: none;
-  -webkit-user-drag: none; /* Safari only, prevents image drag */
+/* Prevent drag and right-click save for all images (vendor-safe) */
+img, picture img {
+  -webkit-user-drag: none; /* Safari */
+  -khtml-user-drag: none; /* Konqueror */
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; /* prevent selection on images */
+  -webkit-touch-callout: none; /* Disable the iOS callout on long-press */
+  touch-action: manipulation; /* reduce gesture interference on touch devices */
+  /* Note: CSS cannot set the draggable attribute; JS sets img.draggable = false for safety */
 }
 /* Custom text selection color for the whole website */
 ::selection {
