@@ -3,10 +3,12 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://Madhav-Poudel.github.io/My-Portfolio",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "deploy:docs": "node scripts/deploy-to-docs.js",
+    "deploy": "npm run build && npm run deploy:docs",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview"

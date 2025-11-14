@@ -17,6 +17,15 @@ async function main() {
   console.log(`Copying build output from '${srcName}' → 'docs'...`);
 
   try {
+    // Build the project first to ensure up-to-date assets
+    console.log('Running build (npm run build)...');
+    execSync('npm run build', { stdio: 'inherit' });
+  } catch (buildErr) {
+    console.error('Build failed:', buildErr);
+    process.exit(4);
+  }
+
+  try {
     // remove existing docs folder
     await fs.remove(dest);
     // copy build output
