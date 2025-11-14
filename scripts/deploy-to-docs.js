@@ -41,7 +41,18 @@ async function main() {
     }
 
     // Push to the main branch (adjust remote/branch if needed)
-    execSync('git push origin main', { stdio: 'inherit' });
+    try {
+      execSync('git push origin main', { stdio: 'inherit' });
+    } catch (pushErr) {
+      console.warn('Initial push failed — attempting to pull --rebase then push again.');
+      try {
+        execSync('git pull --rebase origin main', { stdio: 'inherit' });
+        execSync('git push origin main', { stdio: 'inherit' });
+      } catch (err2) {
+        console.error('Push failed after pull/rebase:', err2);
+        throw err2;
+      }
+    }
 
     console.log('Deployment to docs complete.');
   } catch (err) {
