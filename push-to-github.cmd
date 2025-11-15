@@ -8,7 +8,6 @@ if %ERRORLEVEL% NEQ 0 (
   pause
   exit /b 1
 )
-
 echo.
 echo Current branch:
 git branch --show-current

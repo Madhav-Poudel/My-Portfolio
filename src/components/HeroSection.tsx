@@ -120,21 +120,6 @@ const HeroSection = () => {
             </filter>
           </defs>
           
-          {/* 3D Cube Elements */}
-          <g transform="translate(200,150)" filter="url(#shadow3D)">
-            <polygon points="0,0 40,0 60,20 20,20" fill="url(#techGradient)" opacity="0.8"/>
-            <polygon points="40,0 40,40 60,60 60,20" fill="url(#accentGradient)" opacity="0.6"/>
-            <polygon points="0,0 0,40 20,60 20,20" fill="url(#codeGradient)" opacity="0.7"/>
-            <animateTransform attributeName="transform" attributeType="XML" type="rotate" values="0 30 30;360 30 30" dur="15s" repeatCount="indefinite"/>
-          </g>
-          
-          <g transform="translate(1100,500)" filter="url(#shadow3D)">
-            <polygon points="0,0 30,0 45,15 15,15" fill="url(#techGradient)" opacity="0.7"/>
-            <polygon points="30,0 30,30 45,45 45,15" fill="url(#accentGradient)" opacity="0.5"/>
-            <polygon points="0,0 0,30 15,45 15,15" fill="url(#codeGradient)" opacity="0.6"/>
-            <animateTransform attributeName="transform" attributeType="XML" type="rotate" values="0 22.5 22.5;-360 22.5 22.5" dur="20s" repeatCount="indefinite"/>
-          </g>
-
           {/* Circuit Board Patterns */}
           <g opacity="0.3" filter="url(#techGlow)">
             <path d="M100,300 L200,300 L200,350 L250,350" stroke="url(#accentGradient)" strokeWidth="3" fill="none" strokeDasharray="5,5">
@@ -172,39 +157,6 @@ const HeroSection = () => {
             <text x="800" y="70">const x = y</text>
             <text x="800" y="90">return true;</text>
             <animateTransform attributeName="transform" attributeType="XML" type="translate" values="0,0;0,700" dur="15s" repeatCount="indefinite"/>
-          </g>
-
-          {/* 3D Hexagonal Tech Nodes */}
-          <g transform="translate(500,250)" filter="url(#shadow3D)">
-            <polygon points="30,0 60,17.5 60,52.5 30,70 0,52.5 0,17.5" fill="url(#techGradient)" opacity="0.6" stroke="url(#accentGradient)" strokeWidth="2"/>
-            <polygon points="30,8 52,21 52,47 30,60 8,47 8,21" fill="url(#codeGradient)" opacity="0.4"/>
-            <circle cx="30" cy="35" r="8" fill="url(#accentGradient)" opacity="0.8">
-              <animate attributeName="r" values="8;12;8" dur="4s" repeatCount="indefinite"/>
-            </circle>
-            <animateTransform attributeName="transform" attributeType="XML" type="rotate" values="0 30 35;360 30 35" dur="25s" repeatCount="indefinite"/>
-          </g>
-
-          <g transform="translate(900,400)" filter="url(#shadow3D)">
-            <polygon points="25,0 50,14.4 50,43.3 25,57.7 0,43.3 0,14.4" fill="url(#accentGradient)" opacity="0.5" stroke="url(#techGradient)" strokeWidth="1.5"/>
-            <polygon points="25,6 42,17.3 42,39.4 25,50.8 8,39.4 8,17.3" fill="url(#codeGradient)" opacity="0.3"/>
-            <animateTransform attributeName="transform" attributeType="XML" type="rotate" values="0 25 28.8;-360 25 28.8" dur="18s" repeatCount="indefinite"/>
-          </g>
-
-          {/* Floating Tech Icons */}
-          <g transform="translate(150,600)" opacity="0.4" filter="url(#techGlow)">
-            <rect x="0" y="0" width="30" height="20" rx="3" fill="none" stroke="url(#accentGradient)" strokeWidth="2"/>
-            <rect x="5" y="5" width="20" height="10" rx="1" fill="url(#codeGradient)" opacity="0.6"/>
-            <line x1="8" y1="8" x2="22" y2="8" stroke="url(#techGradient)" strokeWidth="1"/>
-            <line x1="8" y1="12" x2="18" y2="12" stroke="url(#techGradient)" strokeWidth="1"/>
-            <animate attributeName="opacity" values="0.4;0.8;0.4" dur="5s" repeatCount="indefinite"/>
-            <animateTransform attributeName="transform" attributeType="XML" type="translate" values="0,0;0,-20;0,0" dur="8s" repeatCount="indefinite"/>
-          </g>
-
-          <g transform="translate(1250,100)" opacity="0.3" filter="url(#techGlow)">
-            <circle cx="15" cy="15" r="12" fill="none" stroke="url(#techGradient)" strokeWidth="2"/>
-            <polygon points="15,8 20,13 15,18 10,13" fill="url(#accentGradient)"/>
-            <animate attributeName="opacity" values="0.3;0.7;0.3" dur="6s" repeatCount="indefinite"/>
-            <animateTransform attributeName="transform" attributeType="XML" type="translate" values="0,0;0,20;0,0" dur="10s" repeatCount="indefinite"/>
           </g>
 
           {/* Central Tech Core */}
@@ -504,77 +456,6 @@ const HeroSection = () => {
   <div className="flex justify-center lg:justify-end relative z-10 order-2 lg:order-2 w-full">
           <div className="hero-image-rise relative flex flex-col items-center justify-center mt-8 sm:mt-12 lg:mt-20 xl:mt-28 lg:mr-16 xl:mr-24">
             <div className="relative flex items-center justify-center">
-              {/* Epic rotating outer rings - responsive */}
-              <div className="absolute w-56 h-56 sm:w-64 sm:h-64 lg:w-64 lg:h-64 xl:w-72 xl:h-72 border-2 border-cyan-400/20 rounded-full animate-spin opacity-30" style={{animationDuration: '20s'}}></div>
-              <div className="absolute w-52 h-52 sm:w-60 sm:h-60 lg:w-60 lg:h-60 xl:w-68 xl:h-68 border border-purple-400/25 rounded-full animate-spin opacity-40" style={{animationDuration: '15s', animationDirection: 'reverse'}}></div>
-              
-              {/* Holographic energy field - responsive */}
-              <div className="absolute w-56 h-56 sm:w-64 sm:h-64 lg:w-72 lg:h-72 xl:w-88 xl:h-88"
-                   style={{
-                     background: 'conic-gradient(from 0deg, rgba(6, 182, 212, 0.1), rgba(147, 51, 234, 0.1), rgba(59, 130, 246, 0.1), rgba(6, 182, 212, 0.1))',
-                     clipPath: 'polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%)',
-                     animation: 'spin 8s linear infinite'
-                   }}>
-              </div>
-              
-              {/* Dynamic particle swarm - responsive */}
-              <div className="absolute w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 xl:w-96 xl:h-96">
-                <div className="absolute top-8 left-12 w-1 h-1 bg-cyan-400 rounded-full animate-ping delay-100"></div>
-                <div className="absolute top-16 right-20 w-1 h-1 bg-cyan-400 rounded-full animate-ping delay-300"></div>
-                <div className="absolute top-24 left-8 w-1 h-1 bg-blue-400 rounded-full animate-ping delay-500"></div>
-                <div className="absolute bottom-16 right-12 w-1 h-1 bg-blue-400 rounded-full animate-ping delay-700"></div>
-                <div className="absolute bottom-8 left-16 w-1 h-1 bg-cyan-400 rounded-full animate-ping delay-900"></div>
-                <div className="absolute bottom-20 right-8 w-1 h-1 bg-blue-400 rounded-full animate-ping delay-1100"></div>
-                <div className="absolute top-12 left-1/2 w-1 h-1 bg-cyan-400 rounded-full animate-ping delay-1300"></div>
-                <div className="absolute bottom-12 left-1/2 w-1 h-1 bg-blue-400 rounded-full animate-ping delay-1500"></div>
-              </div>
-              
-              {/* Outer octagon frame with energy pulse - responsive */}
-              <div className="absolute w-52 h-52 sm:w-60 sm:h-60 lg:w-64 lg:h-64 xl:w-72 xl:h-72 border-2 border-cyan-400/40"
-                   style={{
-                     clipPath: 'polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%)',
-                     boxShadow: '0 0 40px rgba(6, 182, 212, 0.5), inset 0 0 20px rgba(147, 51, 234, 0.3)',
-                     animation: 'pulse 2s ease-in-out infinite'
-                   }}>
-              </div>
-              
-              {/* Middle frame with holographic gradient - responsive */}
-              <div className="absolute w-48 h-48 sm:w-56 sm:h-56 lg:w-60 lg:h-60 xl:w-68 xl:h-68 border border-purple-400/50"
-                   style={{
-                     clipPath: 'polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%)',
-                     background: 'linear-gradient(45deg, rgba(6, 182, 212, 0.1), rgba(147, 51, 234, 0.1), rgba(59, 130, 246, 0.1), rgba(16, 185, 129, 0.1))',
-                     backgroundSize: '400% 400%',
-                     animation: 'gradient 4s ease infinite'
-                   }}>
-              </div>
-              
-              {/* Outer lines on octagon angled cuts - responsive */}
-              <div className="absolute w-56 h-56 sm:w-64 sm:h-64 lg:w-72 lg:h-72 xl:w-84 xl:h-84">
-                {/* Top left angled cut */}
-                <div className="absolute top-2 left-8 w-12 h-0.5 bg-cyan-400/80 animate-pulse transform rotate-45"></div>
-                {/* Top right angled cut */}
-                <div className="absolute top-2 right-8 w-12 h-0.5 bg-blue-400/80 animate-pulse delay-500 transform -rotate-45"></div>
-                {/* Bottom left angled cut */}
-                <div className="absolute bottom-2 left-8 w-12 h-0.5 bg-blue-400/80 animate-pulse delay-1000 transform -rotate-45"></div>
-                {/* Bottom right angled cut */}
-                <div className="absolute bottom-2 right-8 w-12 h-0.5 bg-cyan-400/80 animate-pulse delay-1500 transform rotate-45"></div>
-                {/* Left top angled cut */}
-                <div className="absolute top-8 left-2 w-0.5 h-12 bg-cyan-400/80 animate-pulse delay-2000 transform rotate-45"></div>
-                {/* Left bottom angled cut */}
-                <div className="absolute bottom-8 left-2 w-0.5 h-12 bg-blue-400/80 animate-pulse delay-3000 transform -rotate-45"></div>
-                {/* Right top angled cut */}
-                <div className="absolute top-8 right-2 w-0.5 h-12 bg-blue-400/80 animate-pulse delay-2500 transform -rotate-45"></div>
-                {/* Right bottom angled cut */}
-                <div className="absolute bottom-8 right-2 w-0.5 h-12 bg-cyan-400/80 animate-pulse delay-3500 transform rotate-45"></div>
-              </div>
-              
-              {/* Scanning beam effect - responsive */}
-              <div className="absolute w-40 h-40 sm:w-48 sm:h-48 lg:w-56 lg:h-56 xl:w-64 xl:h-64 overflow-hidden"
-                   style={{clipPath: 'polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%)'}}>
-                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-cyan-400 to-transparent opacity-60"
-                     style={{animation: 'scan 3s linear infinite'}}>
-                </div>
-              </div>
               
               {/* Main image container with epic effects - responsive */}
               <div className="w-40 h-40 sm:w-48 sm:h-48 lg:w-56 lg:h-56 xl:w-64 xl:h-64 overflow-hidden shadow-2xl bg-transparent flex items-center justify-center relative z-20 border-2 border-cyan-400/80"
