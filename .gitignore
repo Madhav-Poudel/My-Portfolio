@@ -25,3 +25,29 @@ node_modules
 
 # Other project folders
 Apple-Store-Ecommerce/
+
+# Build outputs
+dist/
+build/
+
+# Vite / cache
+.vite/
+node_modules/.vite/
+
+# Local env files
+.env
+.env.*
+
+# Coverage
+coverage/
+
+# Generated docs / deploy artifacts (ignore build output)
+docs/
+
+# Accidental/temporary assets
+src/assets/favicon*
+
+# Misc
+.cache/
+npm-debug.log*
+yarn.lock

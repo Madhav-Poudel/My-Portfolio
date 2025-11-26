@@ -89,7 +89,7 @@ const Navigation = () => {
             </button>
 
             <a
-              href="/CV-Madhav.pdf"
+              href="/CV%20-%20Madhav.pdf"
               download
               className="inline-flex items-center space-x-2 px-4 py-2 text-sm text-white bg-slate-600 hover:bg-slate-700 rounded-full shadow-sm transition-colors duration-200 ml-2"
               aria-label="Download CV"
@@ -163,7 +163,7 @@ const Navigation = () => {
                 Contact
               </button>
               <a
-                href="/CV-Madhav.pdf"
+                href="/CV%20-%20Madhav.pdf"
                 download
                 className="flex items-center space-x-2 px-3 py-2 text-sm text-white bg-slate-600 hover:bg-slate-700 rounded-full shadow-sm transition-colors duration-200 mt-2"
                 aria-label="Download CV"
